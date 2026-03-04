@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Wiki sobre Diseño de Interacción: definición, elementos, ejemplos y recursos multimedia. Proyecto escolar UVM." />
+  <meta name="keywords" content="diseño de interacción, UX, UI, interacción humano-computadora, wiki" />
+  <meta name="author" content="UVM" />
+  <title>Diseño de Interacción — Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header id="inicio" class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__tag">Wiki Escolar · UVM</span>
+      <h1 class="hero__title">Diseño de Interacción</h1>
+      <p class="hero__subtitle">
+        Explora los fundamentos, elementos y ejemplos del campo que conecta
+        a las personas con la tecnología de forma intuitiva y efectiva.
+      </p>
+      <a href="#introduccion" class="btn btn--primary" id="btn-explorar">
+        Explorar contenido ↓
+      </a>
+    </div>
+  </header>
+
+  <nav id="navbar" class="navbar" aria-label="Navegación principal">
+    <div class="navbar__logo">
+      <a href="#inicio">DiX Wiki</a>
+    </div>
+    <button class="navbar__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar__menu" id="nav-menu" role="list">
+      <li><a href="#introduccion" class="nav-link" data-section="introduccion">Introducción</a></li>
+      <li><a href="#definicion" class="nav-link" data-section="definicion">Definición</a></li>
+      <li><a href="#elementos" class="nav-link" data-section="elementos">Elementos</a></li>
+      <li><a href="#ejemplo" class="nav-link" data-section="ejemplo">Ejemplo</a></li>
+      <li><a href="#recursos" class="nav-link" data-section="recursos">Recursos</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <section id="introduccion" class="section section--light fade-in">
+      <div class="section__container">
+        <div class="section__header">
+          <span class="section__number">01</span>
+          <h2 class="section__title">Introducción</h2>
+        </div>
+        <div class="section__body two-col">
+          <div class="section__text">
+            <p>
+              El <strong>Diseño de Interacción</strong> (DxI) es una disciplina que se centra
+              en crear experiencias significativas entre los usuarios y los productos digitales.
+              Surgió como campo formal a finales de los años 80, cuando Bill Moggridge y Bill
+              Verplank acuñaron el término para describir el diseño del comportamiento de
+              artefactos interactivos.
+            </p>
+            <p>
+              En la actualidad, el DxI es parte fundamental del desarrollo de aplicaciones web,
+              móviles, videojuegos, dispositivos inteligentes y cualquier sistema que requiera
+              comunicación entre humano y máquina.
+            </p>
+            <blockquote class="callout">
+              "El diseño de interacción es moldear el comportamiento digital para satisfacer
+              las necesidades humanas." — Bill Moggridge
+            </blockquote>
+          </div>
+          <div class="section__card">
+            <h3>¿Por qué es importante?</h3>
+            <ul class="check-list">
+              <li>Mejora la usabilidad de productos digitales</li>
+              <li>Reduce la curva de aprendizaje del usuario</li>
+              <li>Aumenta la satisfacción y fidelización</li>
+              <li>Disminuye errores y frustración</li>
+              <li>Impulsa el éxito comercial de los proyectos</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section__nav">
+          <a href="#definicion" class="btn btn--outline">Siguiente: Definición →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="definicion" class="section section--dark fade-in">
+      <div class="section__container">
+        <div class="section__header">
+          <span class="section__number">02</span>
+          <h2 class="section__title">Definición</h2>
+        </div>
+        <div class="section__body">
+          <p>
+            Según la <strong>Interaction Design Foundation</strong>, el Diseño de Interacción
+            se define como:
+          </p>
+          <blockquote class="callout callout--accent">
+            "El diseño de la interacción entre usuarios y productos, enfocado principalmente
+            en productos digitales como software, aplicaciones y sitios web."
+          </blockquote>
+          <p>
+            Implica la creación de interfaces donde el usuario pueda alcanzar sus objetivos
+            con eficiencia y satisfacción. Sus metas se articulan en <strong>cinco dimensiones
+              del diseño de interacción</strong>, propuestas por Gillian Crampton Smith:
+          </p>
+          <div class="cards-grid" id="dimensiones">
+            <article class="card" tabindex="0">
+              <div class="card__icon">1D</div>
+              <h3 class="card__title">Palabras</h3>
+              <p class="card__text">
+                El lenguaje y texto que se utiliza en la interfaz para comunicar
+                información al usuario de forma clara.
+              </p>
+            </article>
+            <article class="card" tabindex="0">
+              <div class="card__icon">2D</div>
+              <h3 class="card__title">Representaciones Visuales</h3>
+              <p class="card__text">
+                Elementos gráficos como iconos, tipografía, ilustraciones y fotografías
+                que transmiten información.
+              </p>
+            </article>
+            <article class="card" tabindex="0">
+              <div class="card__icon">3D</div>
+              <h3 class="card__title">Objetos Físicos</h3>
+              <p class="card__text">
+                Los dispositivos y hardware con que el usuario interactúa: pantallas,
+                teclados, mouse, sensores táctiles.
+              </p>
+            </article>
+            <article class="card" tabindex="0">
+              <div class="card__icon">4D</div>
+              <h3 class="card__title">Tiempo</h3>
+              <p class="card__text">
+                La dimensión temporal: animaciones, videos, sonidos y el ritmo con
+                que los elementos cambian y responden.
+              </p>
+            </article>
+            <article class="card" tabindex="0">
+              <div class="card__icon">5D</div>
+              <h3 class="card__title">Comportamiento</h3>
+              <p class="card__text">
+                La forma en que las dimensiones anteriores se combinan para crear
+                acciones y reacciones en la interfaz.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="section__nav">
+          <a href="#introduccion" class="btn btn--ghost">← Anterior</a>
+          <a href="#elementos" class="btn btn--outline">Siguiente: Elementos →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="elementos" class="section section--light fade-in">
+      <div class="section__container">
+        <div class="section__header">
+          <span class="section__number">03</span>
+          <h2 class="section__title">Elementos</h2>
+        </div>
+        <div class="section__body">
+          <p>
+            El Diseño de Interacción se compone de elementos clave que, en conjunto,
+            determinan la calidad de la experiencia del usuario:
+          </p>
+          <div class="accordion" id="accordion-elementos">
+            <div class="accordion__item">
+              <button class="accordion__header" aria-expanded="false" id="acc-btn-1" aria-controls="acc-panel-1">
+                <span class="accordion__icon">⚡</span>
+                Usabilidad
+                <span class="accordion__arrow">▾</span>
+              </button>
+              <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-btn-1">
+                <p>
+                  La usabilidad mide qué tan fácil y eficiente es para un usuario cumplir
+                  sus objetivos con un sistema. Se evalúa mediante pruebas con usuarios reales
+                  y se mide en términos de <em>efectividad</em>, <em>eficiencia</em> y
+                  <em>satisfacción</em>.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header" aria-expanded="false" id="acc-btn-2" aria-controls="acc-panel-2">
+                <span class="accordion__icon">🧭</span>
+                Affordances (Posibilidades de acción)
+                <span class="accordion__arrow">▾</span>
+              </button>
+              <div class="accordion__panel" id="acc-panel-2" role="region" aria-labelledby="acc-btn-2">
+                <p>
+                  Son las señales visuales y físicas que le indican al usuario cómo puede
+                  interactuar con un elemento. Un botón abultado sugiere que se puede
+                  presionar; un campo subrayado sugiere que se puede escribir.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header" aria-expanded="false" id="acc-btn-3" aria-controls="acc-panel-3">
+                <span class="accordion__icon">🔁</span>
+                Retroalimentación (Feedback)
+                <span class="accordion__arrow">▾</span>
+              </button>
+              <div class="accordion__panel" id="acc-panel-3" role="region" aria-labelledby="acc-btn-3">
+                <p>
+                  Consiste en comunicarle al usuario el resultado de sus acciones de
+                  forma clara e inmediata. Ejemplos: un mensaje de éxito al enviar un
+                  formulario, una animación de carga o un sonido de notificación.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header" aria-expanded="false" id="acc-btn-4" aria-controls="acc-panel-4">
+                <span class="accordion__icon">🗺️</span>
+                Modelos Mentales
+                <span class="accordion__arrow">▾</span>
+              </button>
+              <div class="accordion__panel" id="acc-panel-4" role="region" aria-labelledby="acc-btn-4">
+                <p>
+                  Son las representaciones internas que los usuarios tienen sobre cómo
+                  funciona un sistema. Un buen diseño de interacción alinea el sistema
+                  con los modelos mentales existentes del usuario para reducir la carga
+                  cognitiva.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header" aria-expanded="false" id="acc-btn-5" aria-controls="acc-panel-5">
+                <span class="accordion__icon">♿</span>
+                Accesibilidad
+                <span class="accordion__arrow">▾</span>
+              </button>
+              <div class="accordion__panel" id="acc-panel-5" role="region" aria-labelledby="acc-btn-5">
+                <p>
+                  Garantiza que el sistema pueda ser utilizado por personas con distintas
+                  capacidades. Incluye diseño para lectores de pantalla, contraste adecuado,
+                  navegación por teclado y compatibilidad con tecnologías asistivas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__nav">
+          <a href="#definicion" class="btn btn--ghost">← Anterior</a>
+          <a href="#ejemplo" class="btn btn--outline">Siguiente: Ejemplo →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ejemplo" class="section section--dark fade-in">
+      <div class="section__container">
+        <div class="section__header">
+          <span class="section__number">04</span>
+          <h2 class="section__title">Ejemplo Práctico</h2>
+        </div>
+        <div class="section__body">
+          <p>
+            Para ilustrar los principios del Diseño de Interacción, analicemos el proceso
+            de diseño de un <strong>formulario de registro</strong> para una aplicación móvil.
+          </p>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__marker">1</div>
+              <div class="timeline__content">
+                <h3>Investigación de usuarios</h3>
+                <p>
+                  Se realizan entrevistas y encuestas para comprender las necesidades,
+                  frustraciones y expectativas de los usuarios potenciales antes de diseñar
+                  cualquier elemento.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__marker">2</div>
+              <div class="timeline__content">
+                <h3>Prototipado de baja fidelidad</h3>
+                <p>
+                  Se crean bocetos y wireframes del formulario, definiendo qué campos
+                  se necesitan, su orden y la jerarquía visual antes de añadir color o
+                  gráficos.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__marker">3</div>
+              <div class="timeline__content">
+                <h3>Diseño de interacciones</h3>
+                <p>
+                  Se define el comportamiento: validación en tiempo real, mensajes de error
+                  claros, indicadores de progreso y confirmación de registro con animación
+                  de éxito.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__marker">4</div>
+              <div class="timeline__content">
+                <h3>Pruebas de usabilidad</h3>
+                <p>
+                  Se realizan pruebas con usuarios reales para identificar puntos de
+                  fricción, tiempos de completado y porcentaje de éxito del formulario.
+                  Los datos guían mejoras iterativas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <h3 class="subsection-title">Comparativa: Antes vs. Después del Diseño de Interacción</h3>
+          <div class="table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Aspecto</th>
+                  <th>Sin DxI</th>
+                  <th>Con DxI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mensajes de error</td>
+                  <td class="bad">Genéricos ("Error 400")</td>
+                  <td class="good">Específicos ("El correo ya existe")</td>
+                </tr>
+                <tr>
+                  <td>Retroalimentación</td>
+                  <td class="bad">Sin confirmación visual</td>
+                  <td class="good">Animación de check al completar</td>
+                </tr>
+                <tr>
+                  <td>Campos requeridos</td>
+                  <td class="bad">No indicados claramente</td>
+                  <td class="good">Marcados con asterisco y color</td>
+                </tr>
+                <tr>
+                  <td>Tasa de completado</td>
+                  <td class="bad">~42%</td>
+                  <td class="good">~87%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="section__nav">
+          <a href="#elementos" class="btn btn--ghost">← Anterior</a>
+          <a href="#recursos" class="btn btn--outline">Siguiente: Recursos →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section section--light fade-in">
+      <div class="section__container">
+        <div class="section__header">
+          <span class="section__number">05</span>
+          <h2 class="section__title">Recursos Multimedia</h2>
+        </div>
+        <div class="section__body">
+          <p>
+            A continuación se presentan recursos multimedia para profundizar en el
+            Diseño de Interacción: un video introductorio y material complementario.
+          </p>
+          <div class="media-block">
+            <h3 class="media-block__title">🎬 Video: ¿Qué es el Diseño de Interacción?</h3>
+            <div class="video-wrapper">
+              <iframe id="video-principal" src="https://www.youtube.com/embed/9gho-gFZOVA"
+                title="¿Qué es el Diseño de Interacción? — Video educativo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy">
+              </iframe>
+            </div>
+            <p class="media-block__fallback">
+              Si el video no se muestra, puedes verlo directamente en
+              <a href="https://www.youtube.com/watch?v=9gho-gFZOVA" target="_blank" rel="noopener noreferrer">
+                YouTube →
+              </a>
+            </p>
+          </div>
+          <div class="resources-grid">
+            <a href="https://www.interaction-design.org/literature/topics/interaction-design" target="_blank"
+              rel="noopener noreferrer" class="resource-card">
+              <div class="resource-card__icon">📚</div>
+              <div class="resource-card__body">
+                <h3>IxDF — Base de conocimiento</h3>
+                <p>Artículos y cursos especializados en Diseño de Interacción.</p>
+              </div>
+              <span class="resource-card__arrow">↗</span>
+            </a>
+            <a href="https://www.nngroup.com/topic/interaction-design/" target="_blank" rel="noopener noreferrer"
+              class="resource-card">
+              <div class="resource-card__icon">🔬</div>
+              <div class="resource-card__body">
+                <h3>Nielsen Norman Group</h3>
+                <p>Investigación sobre usabilidad y experiencia de usuario.</p>
+              </div>
+              <span class="resource-card__arrow">↗</span>
+            </a>
+            <a href="https://www.smashingmagazine.com/category/interaction-design" target="_blank"
+              rel="noopener noreferrer" class="resource-card">
+              <div class="resource-card__icon">🎨</div>
+              <div class="resource-card__body">
+                <h3>Smashing Magazine</h3>
+                <p>Artículos prácticos sobre patrones de interacción y UX.</p>
+              </div>
+              <span class="resource-card__arrow">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="section__nav">
+          <a href="#ejemplo" class="btn btn--ghost">← Anterior</a>
+          <a href="#inicio" class="btn btn--primary">↑ Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__title">Diseño de Interacción — Wiki</p>
+      <p class="footer__subtitle">Etapa 5 · Proyecto Escolar · UVM · 2026</p>
+      <nav class="footer__nav" aria-label="Navegación del pie de página">
+        <a href="#introduccion">Introducción</a>
+        <a href="#definicion">Definición</a>
+        <a href="#elementos">Elementos</a>
+        <a href="#ejemplo">Ejemplo</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button id="btn-top" class="btn-top" aria-label="Volver al inicio de la página" title="Volver al inicio">
+    &#8679;
+  </button>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

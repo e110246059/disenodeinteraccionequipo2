@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* Tipografía */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #1F2937;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #1F2937;
+}
+
+/* Header */
+header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E6E7EB;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #C81E3A;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #A3152C;
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-color: #F7F7F8;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Cajas destacadas */
+.caja-destacada {
+  background-color: #FDE7EA;
+  border-left: 4px solid #C81E3A;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+/* Botones */
+button, .btn-primario {
+  background-color: #C81E3A;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover, .btn-primario:hover {
+  background-color: #A3152C;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border: 1px solid #E6E7EB;
+  color: #1F2937;
+  padding: 10px 18px;
+  border-radius: 10px;
+}
+
+.btn-secundario:hover {
+  background-color: #F7F7F8;
+}
+
+/* Footer */
+footer {
+  background-color: #F7F7F8;
+  color: #6B7280;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+/* CSS Document */
+
